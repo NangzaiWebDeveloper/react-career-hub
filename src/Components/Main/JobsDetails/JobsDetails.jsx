@@ -9,7 +9,7 @@ const JobsDetails = ({props}) => {
     return (
         <div className='border border-gray-300 p-6 rounded-xl shadow-lg'>
             <img src={logo} alt="" />
-            <h3 className='text-3xl font-bold'>{job_title}</h3>
+            <h3 className='text-xl md:text-3xl font-bold'>{job_title}</h3>
             <p>{company_name}</p>
             <div className='flex gap-3'>
                 <button className='btn border border-[#9873FF]'>{remote_or_onsite}</button>

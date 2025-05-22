@@ -9,8 +9,8 @@ const Root = () => {
             <header className='max-w-6xl mx-auto'>
                 <Navbar/>
             </header>
-
-            <main> 
+        
+            <main className='mt-6 max-w-6xl mx-auto px-4 md:px-0'> 
                 <Outlet/> 
             </main>
 

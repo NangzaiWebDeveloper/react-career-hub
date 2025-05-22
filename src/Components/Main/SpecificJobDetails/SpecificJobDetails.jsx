@@ -20,8 +20,8 @@ const SpecificJobDetails = () => {
         <div className='max-w-6xl mx-auto mt-10'>
             <h1 className='text-4xl font-extrabold text-center'>Job Details :{job.id}</h1>
 
-            <div className='grid grid-cols-4 border-2 border-rose-600 gap-6 my-32'>
-                <div className='col-span-3 border-amber-500 border-2'>
+            <div className='grid md:grid-cols-4 gap-6 my-10 md:my-32'>
+                <div className='col-span-3'>
                     <p><span className='font-bold'>Job Description :</span> {job.job_description}</p>
                     <p className='my-4'><span className='font-bold'>Job Responsibility:</span> {job.job_responsibility}</p>
                     <p className='font-bold'>Educational requirement:</p>
@@ -29,7 +29,7 @@ const SpecificJobDetails = () => {
                     <p className='font-bold mt-4'>Experiences:</p>
                     <p>{job.experiences}</p>
                 </div>
-                <div className='border-green-500 border-2 p-5 leading-[1.8]'>
+                <div className='border-gray-300 border rounded-xl shadow-xl p-5 leading-[1.8]'>
                     <h6 className='font-bold'>Job Details</h6>
                     <hr className='opacity-30' />
                     <p><span className='font-bold'>Salary:</span> {job.salary}</p>
