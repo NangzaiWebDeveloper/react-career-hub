@@ -45,10 +45,10 @@ const AppliedJobs = () => {
         }
     }, [jobs])
     return (
-        <div>
-            applied jobs {appliedJobs.length}
+        <div className='mb-20'>
+            <h1 className='text-center text-3xl font-bold'>Applied Jobs</h1>
 
-            <details className="dropdown">
+            <details className="dropdown mt-10">
                 <summary className="btn m-1">Filter</summary>
                 <ul className="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
                     <li onClick={() => handleJobsFilter("all")}><a>All</a></li>
@@ -61,8 +61,8 @@ const AppliedJobs = () => {
                 displayJobs.map(job => (
                     // <li key={job.id}> <span>{job.job_title} {job.company_name} : {job.remote_or_onsite} </span> </li>
                     <div className='border border-gray-300 rounded-2xl shadow-lg my-7 p-5'>
-                        <div className='flex justify-between items-center pr-7'>
-                            <div className='flex gap-6'>
+                        <div className='md:flex justify-between items-center pr-7'>
+                            <div className='md:flex gap-6'>
                                 <div className='w-36'>
                                     <img className='w-full' src={job.logo} alt="" />
                                 </div>
