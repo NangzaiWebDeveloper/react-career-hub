@@ -3,6 +3,8 @@ import JobsDetails from '../JobsDetails/JobsDetails';
 
 const FeaturedJobs = () => {
 
+    //Featured Jobs
+
     const [items, setItem] = useState([])
     //This is not best way to load show all data
     const [dataLength, setDataLength] = useState(4)
